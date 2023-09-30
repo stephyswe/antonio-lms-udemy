@@ -132,3 +132,19 @@ npm i react-quill
 # 22: Chapter Access Form
 
 npx shadcn-ui@latest add checkbox -y
+
+# 23: Chapter Video Form
+
+## MUX
+## https://dashboard.mux.com/ - settings/access_token - generate new token
+- "mux_video" - copy token and secret to .env
+
+.env
+"""
+MUX_TOKEN_ID=
+MUX_TOKEN_SECRET=
+"""
+
+
+npm i @mux/mux-player-react
+npm i @mux/mux-node
