@@ -1,4 +1,5 @@
 # Environment Setup
+
 # https://ui.shadcn.com/docs/installation/next
 
 npx create-next-app@13.4.12 . --typescript --tailwind --eslint
