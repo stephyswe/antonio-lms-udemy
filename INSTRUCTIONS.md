@@ -38,7 +38,7 @@ npm i
 
 # Authentication
 
-Clerk setup: 
+Clerk setup:
 https://clerk.com/ - login - add new application
 name: antonio-lms-udemy - create - copy env to .env
 
@@ -54,3 +54,8 @@ NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 .env
 
 npm i @clerk/nextjs
+
+#
+
+npx shadcn-ui@latest add sheet -y
+npm i @radix-ui/react-dialog@1.0.4
