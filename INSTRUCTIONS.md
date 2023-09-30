@@ -124,3 +124,7 @@ npx prisma db push
 
 npm i @hello-pangea/dnd
 npx shadcn-ui@latest add badge -y
+
+# 21: Chapter Description Form
+
+npm i react-quill
