@@ -104,3 +104,11 @@ UPLOADTHING_APP_ID=
 """
 
 ## https://docs.uploadthing.com/nextjs/appdir
+
+# 14: Course Category Form
+
+npx shadcn-ui@latest add popover -y
+npx shadcn-ui@latest add command -y
+
+## Prisma seed command
+node scripts/seed.ts
