@@ -154,3 +154,8 @@ npx shadcn-ui@latest add alert-dialog -y
 npm i @radix-ui/react-alert-dialog@1.0.4
 npm i @radix-ui/react-dialog@1.0.4
 
+
+# 25: Course Publish Action
+
+npm i react-confetti
+npm i zustand
