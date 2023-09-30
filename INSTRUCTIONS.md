@@ -80,3 +80,6 @@ npx prisma db push
 
 npm i @prisma/client
 
+# 12: Course Description Form
+
+npx shadcn-ui@latest add textarea -y
