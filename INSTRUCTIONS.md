@@ -25,3 +25,13 @@ Write configuration to components.json. Proceed? » (Y)
 npm run dev - # http://localhost:3000/
 
 npx shadcn-ui@latest add button -y
+
+# Folders Setup
+
+npm i
+
+# Extention: "next.nav" install
+
+"ctrl+shift+p" - "next.nav" - click "Path button" (further to left) - "app" - submit -
+
+# Shortcut: Create page - "sfc"
