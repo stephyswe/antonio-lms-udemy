@@ -128,3 +128,7 @@ npx shadcn-ui@latest add badge -y
 # 21: Chapter Description Form
 
 npm i react-quill
+
+# 22: Chapter Access Form
+
+npx shadcn-ui@latest add checkbox -y
