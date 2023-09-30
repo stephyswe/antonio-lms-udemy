@@ -164,3 +164,8 @@ npm i zustand
 npx shadcn-ui@latest add table -y
 npm i @tanstack/react-table
 npx shadcn-ui@latest add dropdown-menu -y
+
+# 27: Categories Query
+
+npm i query-string
+npm i react-icons
