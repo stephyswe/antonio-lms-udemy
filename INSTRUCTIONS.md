@@ -36,7 +36,7 @@ npm i
 
 ## Shortcut: Create page - "sfc"
 
-# Authentication
+# 04: Authentication
 
 Clerk setup:
 https://clerk.com/ - login - add new application
@@ -55,7 +55,14 @@ NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 
 npm i @clerk/nextjs
 
-#
+# 06: Dynamic Layout
 
 npx shadcn-ui@latest add sheet -y
 npm i @radix-ui/react-dialog@1.0.4
+
+# 07: Course Creation UI
+
+npx shadcn-ui@latest add form -y
+npx shadcn-ui@latest add input -y
+npm i axios
+npm i react-hot-toast
