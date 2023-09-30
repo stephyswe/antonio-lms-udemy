@@ -145,6 +145,12 @@ MUX_TOKEN_ID=
 MUX_TOKEN_SECRET=
 """
 
-
 npm i @mux/mux-player-react
 npm i @mux/mux-node
+
+# 24: Chapter Publish Action
+
+npx shadcn-ui@latest add alert-dialog -y
+npm i @radix-ui/react-alert-dialog@1.0.4
+npm i @radix-ui/react-dialog@1.0.4
+
