@@ -30,8 +30,27 @@ npx shadcn-ui@latest add button -y
 
 npm i
 
-# Extention: "next.nav" install
+## Extention: "next.nav" install
 
 "ctrl+shift+p" - "next.nav" - click "Path button" (further to left) - "app" - submit -
 
-# Shortcut: Create page - "sfc"
+## Shortcut: Create page - "sfc"
+
+# Authentication
+
+Clerk setup: 
+https://clerk.com/ - login - add new application
+name: antonio-lms-udemy - create - copy env to .env
+
+.env
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
+
+.gitignore
+.env
+
+npm i @clerk/nextjs
