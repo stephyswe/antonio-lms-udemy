@@ -66,3 +66,17 @@ npx shadcn-ui@latest add form -y
 npx shadcn-ui@latest add input -y
 npm i axios
 npm i react-hot-toast
+
+# 08: Prisma & DB Setup
+npm i -D prisma 
+npx prisma init
+
+<setup mysql - planetscale or aiven>
+
+# add schema.prisma code
+
+npx prisma generate 
+npx prisma db push
+
+npm i @prisma/client
+
