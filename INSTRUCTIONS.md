@@ -83,3 +83,24 @@ npm i @prisma/client
 # 12: Course Description Form
 
 npx shadcn-ui@latest add textarea -y
+
+# 13: UploadThing & Image Form
+
+## UploadThing
+## https://uploadthing.com/dashboard/new  - "name: antonio-lsm-udemy"
+- getting started - 
+
+
+npm i uploadthing
+npm i @uploadthing/react
+npm i react-dropzone
+
+## https://uploadthing.com/dashboard/oonm03skcg/api-keys
+
+.env
+"""
+UPLOADTHING_SECRET=
+UPLOADTHING_APP_ID=
+"""
+
+## https://docs.uploadthing.com/nextjs/appdir
