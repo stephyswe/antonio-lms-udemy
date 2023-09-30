@@ -112,3 +112,10 @@ npx shadcn-ui@latest add command -y
 
 ## Prisma seed command
 node scripts/seed.ts
+
+# 17: Prisma schema finalization
+
+# add schema.prisma code
+
+npx prisma generate
+npx prisma db push
