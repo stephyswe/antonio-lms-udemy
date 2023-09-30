@@ -119,3 +119,8 @@ node scripts/seed.ts
 
 npx prisma generate
 npx prisma db push
+
+# 19: Chapter Reorder Functionality
+
+npm i @hello-pangea/dnd
+npx shadcn-ui@latest add badge -y
