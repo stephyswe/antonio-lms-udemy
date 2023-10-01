@@ -205,3 +205,12 @@ npx shadcn-ui@latest add progress -y
 
 npx shadcn-ui@latest add card -y
 npm i recharts
+
+# (Optional) Admin Protection
+
+## https://dashboard.clerk.com/ - project - users - select teacher user - copy user ID to .env 
+
+.env
+"""
+NEXT_PUBLIC_TEACHER_ID=
+"""
