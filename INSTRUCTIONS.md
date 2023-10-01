@@ -169,3 +169,8 @@ npx shadcn-ui@latest add dropdown-menu -y
 
 npm i query-string
 npm i react-icons
+
+# 30: Course & Chapters Layout
+
+npx prisma generate
+npx prisma db push # - yes
