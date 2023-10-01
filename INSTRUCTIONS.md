@@ -206,7 +206,7 @@ npx shadcn-ui@latest add progress -y
 npx shadcn-ui@latest add card -y
 npm i recharts
 
-# (Optional) Admin Protection
+# 37: (Optional) Admin Protection
 
 ## https://dashboard.clerk.com/ - project - users - select teacher user - copy user ID to .env 
 
@@ -214,3 +214,13 @@ npm i recharts
 """
 NEXT_PUBLIC_TEACHER_ID=
 """
+
+# 38: Deployment
+
+## Stripe webhook in prod: https://dashboard.stripe.com/test/webhooks - hosted endpoints - 
+"""
+url: https://antonio-lms-udemy.vercel.app/api/webhook
+events: checkout.session.completed
+"""
+
+- add endpoint - reveal signing secret - add to env in Vercel Dashboard
