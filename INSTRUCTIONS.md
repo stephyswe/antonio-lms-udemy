@@ -174,3 +174,10 @@ npm i react-icons
 
 npx prisma generate
 npx prisma db push # - yes
+
+# 32: Course Purchase UI
+
+npx shadcn-ui@latest add separator -y
+
+# 33: Stripe Integration
+
