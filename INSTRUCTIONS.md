@@ -200,3 +200,8 @@ STRIPE_WEBHOOK_SECRET=
 # 34: Chapter Progress Functionality
 
 npx shadcn-ui@latest add progress -y
+
+# 36: Teacher Analytics Dashboard
+
+npx shadcn-ui@latest add card -y
+npm i recharts
