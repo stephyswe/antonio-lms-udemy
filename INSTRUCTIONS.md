@@ -181,3 +181,18 @@ npx shadcn-ui@latest add separator -y
 
 # 33: Stripe Integration
 
+npm i stripe
+
+## https://dashboard.stripe.com/ - new account: antonio-lms-udemy" - developers - api keys tab - copy secret key to .env "API_KEY"
+## 1/3 webhook(1/3): https://dashboard.stripe.com/test/webhooks/create?endpoint_location=local - dw CLI
+- CLI: stripe login - enter - allow access - close window -
+## 2/3 forward events: "stripe listen --forward-to localhost:3000/api/webhook" - keep running
+## 3/3 copy webhook signing secret to .env "STRIPE_WEBHOOK_SECRET"
+.env
+"""
+STRIPE_API_KEY=sk_test...
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+STRIPE_WEBHOOK_SECRET=
+"""
+
+## Once Purchase done - https://dashboard.stripe.com/test/payments
