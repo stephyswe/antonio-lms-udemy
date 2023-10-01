@@ -1,9 +1,10 @@
+import { formatPrice } from "@/lib/format";
 import { BookOpen } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { CourseProgress } from "@/components/course-progress";
 import { IconBadge } from "@/components/icon-badge";
-import { formatPrice } from "@/lib/format";
 
 interface CourseCardProps {
   id: string;
@@ -26,16 +27,16 @@ export const CourseCard = ({
 }: CourseCardProps) => {
   return (
     <Link href={`/courses/${id}`}>
-      <div className="group hover:shadow-sm transition overflow-hidden border rounded-lg p-3 h-full">
-        <div className="relative w-full aspect-video rounded-md overflow-hidden">
+      <div className="h-full p-3 overflow-hidden transition border rounded-lg group hover:shadow-sm">
+        <div className="relative w-full overflow-hidden rounded-md aspect-video">
           <Image fill className="object-cover" alt={title} src={imageUrl} />
         </div>
         <div className="flex flex-col pt-2">
-          <div className="text-lg md:text-base font-medium group-hover:text-sky-700 transition line-clamp-2">
+          <div className="text-lg font-medium transition md:text-base group-hover:text-sky-700 line-clamp-2">
             {title}
           </div>
           <p className="text-xs text-muted-foreground">{category}</p>
-          <div className="my-3 flex items-center gap-x-2 text-sm md:text-xs">
+          <div className="flex items-center my-3 text-sm gap-x-2 md:text-xs">
             <div className="flex items-center gap-x-1 text-slate-500">
               <IconBadge size="sm" icon={BookOpen} />
               <span>
@@ -44,9 +45,13 @@ export const CourseCard = ({
             </div>
           </div>
           {progress !== null ? (
-            <div>TODO: Progress component</div>
+            <CourseProgress
+              variant={progress === 100 ? "success" : "default"}
+              size="sm"
+              value={progress}
+            />
           ) : (
-            <p className="text-md md:text-sm font-medium text-slate-700">
+            <p className="font-medium text-md md:text-sm text-slate-700">
               {formatPrice(price)}
             </p>
           )}

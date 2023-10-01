@@ -196,3 +196,7 @@ STRIPE_WEBHOOK_SECRET=
 """
 
 ## Once Purchase done - https://dashboard.stripe.com/test/payments
+
+# 34: Chapter Progress Functionality
+
+npx shadcn-ui@latest add progress -y
